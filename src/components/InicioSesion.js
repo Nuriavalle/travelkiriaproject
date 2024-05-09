@@ -11,33 +11,34 @@ function InicioSesion() {
                         <h2 class="text-3xl font-semibold font-sans italic mt-2 mb-6 text-gray-700 text-center">Iniciar sesion</h2>
                         <div class=" h-[450px] overflow-hidden flex items-center px-8 justify-center">
                             <div class="bg-white bg-opacity-60 w-full shadow-3xl rounded-2xl">
-                                <div class="shadow shadow-gray-200 absolute left-1/2 transform -translate-x-[225%] -translate-y-1/2 rounded-full p-4 md:p-8">
+                                <div class="absolute flex top-[22pc] right-[50pc]">
                                     <img src={logoUsuario} class="w-16 h-16" />
                                 </div>
-                                <form class="p-4 md:p-10">
-                                    <div class="flex items-center text-lg md:mb-8">
-                                        <label class="normal-case font-medium text-sky-900 text-base font-sans" for="grid-first-name" />
+                                <form class="p-12 md:p-16">
+                                    <div class="text-lg mb- md:mb-8">
+                                        <label class="normal-case font-medium text-sky-900 text-base font-sans" for="grid-first-name">
                                         Usuario
+                                        </label>
                                         <input type="text" id="usuario" class="bg-white rounded-2xl border border-[#0D3B66] pl-4 py-2 md:py-2 focus:outline-none w-full" />
                                     </div>
-                                    <div class="flex items-center text-lg mb-6 md:mb-8">
-                                        <label class="normal-case font-medium text-sky-900 text-base font-sans" for="grid-first-name" />
+                                    <div class="text-lg mb-6 md:mb-8">
+                                        <label class="normal-case font-medium text-sky-900 text-base font-sans" for="grid-first-name">
                                         Contraseña
+                                        </label>
                                         <input type="password" id="contraseña" class="bg-white rounded-2xl border border-[#0D3B66] pl-4 py-1 md:py-2 focus:outline-none w-full" />
                                         <hr class="border-amber-700 mt-4" />
                                     </div>
-                                    <button class="bg-sky-900 font-medium ring-offset-slate-200	 drop-shadow-2xl shadow-2xl md:p-2 text-white w-full rounded-full">Acceder</button>
+                                    <button class="bg-[#0D3B66] font-medium ring-offset-slate-200  drop-shadow-2xl shadow-2xl md:p-2 text-white w-full rounded-full">Acceder</button>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <div class="bg-sky-900 w-full p-8 lg:w-1/3">
+                    <div class="bg-[#0D3B66] w-full p-8 lg:w-1/3">
                         <h2 class="text-2xl font-bold italic mt-20 text-yellow-100 text-center">¿Todavia no tienes una cuenta?</h2>
                         <p class="text-lg italic text-yellow-100 text-center">¡Inicia sesión y encuentra tu hogar lejos de casa en un solo clic!</p>
                         <div class="mt-8">
                             <button class="bg-white text-sky-900 font-bold py-2 px-2 w-full rounded-full hover:bg-yellow-100">Registrate</button>
                         </div>
-
                         <div class="mt-4 flex items-center justify-between">
                             <span class="border-b w-1/5 lg:w-1/4"></span>
                             <a href="#" class="text-xs italic text-center text-yellow-100 uppercase">o</a>
@@ -48,7 +49,7 @@ function InicioSesion() {
                         </div>
                         <div class="mt-6  items-right text-gray-100 pt-8">
                             <hr class="border-gray-300" />
-                            <button class="bg-sky-900 text-white text-left italic py-2 px-2 w-full underline">Olvidaste tu contraseña?</button>
+                            <button class="bg-[#0D3B66] text-white text-left italic py-2 px-2 w-full underline">Olvidaste tu contraseña?</button>
                         </div>
                     </div>
                 </div>

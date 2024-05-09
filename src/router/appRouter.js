@@ -12,7 +12,6 @@ import ReservaHabi from '../page/Reserva';
 import MetodoDePago from '../page/metododePago';
 import PerfildelHotel1 from '../page/PerfildelHotel';
 
-
 function AppRouter() {
     return (
         <BrowserRouter>
@@ -23,10 +22,10 @@ function AppRouter() {
                 <Route path="/IniciodeSesion" element={<IniciodeSesion />} />
                 <Route path="/VistaHoliday" element={<VistaHoliday />} />
                 <Route path="/HabitacionHotel" element={<HabitacionHotel />} />
-                <Route path="/Terminos" element={<Terminos/>}/>
-                <Route path="/ReservaHabi" element={<ReservaHabi/>}/>
-                <Route path="/metododePago" element={<MetodoDePago/>}/>
-                <Route path="/PerfildelHotel" element={<PerfildelHotel1/>}/>
+                <Route path="/Terminos" element={<Terminos />} />
+                <Route path="/ReservaHabi" element={<ReservaHabi />} />
+                <Route path="/metododePago" element={<MetodoDePago />} />
+                <Route path="/PerfildelHotel" element={<PerfildelHotel1 />} />
             </Routes>
             <Footer></Footer>
         </BrowserRouter>

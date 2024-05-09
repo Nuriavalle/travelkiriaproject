@@ -10,10 +10,8 @@ function VistaHoliday() {
     return (
         <div class="pt-4">
             <Header2></Header2>
-          
             <Cuadros></Cuadros>
             <Carrusel></Carrusel>
-          
         </div>
     )
 }

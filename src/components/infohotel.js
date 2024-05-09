@@ -6,7 +6,6 @@ import Telefono from "../images/llamada-telefonica.png"
 import Camara from "../images/camara.png"
 import Opciones from "../components/opciones"
 
-
 function infoHotel() {
   return (
     <div class="bg-white-100 rounded-lg px-8 flex flex-col md:ml-auto w-full -mt-[88%]">
@@ -26,28 +25,25 @@ function infoHotel() {
         <div class="p-0">
           <ul class="flex flex-col gap-4">
             <li class="flex items-center gap-4">
-             <img src={Globo} class="w-8 h-8"/>
+              <img src={Globo} class="w-8 h-8" />
               <p class="block font-sans text-base [#0D3B66] antialiased font-normal leading-relaxed text-inherit">
                 reservashi@agrisal.com
               </p>
             </li>
             <li class="flex items-center gap-4">
-            <img src={Camara} class="w-8 h-8"/>
-
+              <img src={Camara} class="w-8 h-8" />
               <p class="block font-sans [#0D3B66] text-base antialiased font-normal leading-relaxed text-inherit">
                 www.holidayinn.com
               </p>
             </li>
             <li class="flex items-center gap-4">
-            <img src={Telefono} class="w-8 h-8" />
-            <p class="block font-sans [#0D3B66] text-base antialiased font-normal leading-relaxed text-inherit">
+              <img src={Telefono} class="w-8 h-8" />
+              <p class="block font-sans [#0D3B66] text-base antialiased font-normal leading-relaxed text-inherit">
                 www.holidayinn.com
-                </p>
-          
+              </p>
             </li>
             <li class="flex items-center gap-4">
-            <img src={Ver} class="w-8 h-8"/>
-
+              <img src={Ver} class="w-8 h-8" />
               <p class="block font-sans [#0D3B66]  text-base antialiased font-normal leading-relaxed text-inherit">
                 4.6/5 837 Opiniones
               </p>
@@ -55,7 +51,6 @@ function infoHotel() {
           </ul>
         </div>
         <div className="lg:w-4/12 h-4/5 md:pr-16 lg:pr-0 pr-0">
-        
         </div>
       </div>
       <Opciones></Opciones>

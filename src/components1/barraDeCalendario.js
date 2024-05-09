@@ -1,4 +1,3 @@
-
 function BarraDeCalendario() {
   return (
     <div class="container bg-[#0D3B66] mx-auto justify-center items-center pl-4">

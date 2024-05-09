@@ -7,8 +7,6 @@ import Huesped from "../images/huespedes.png"
 import Tamaño from "../images/tamaño.png"
 import Cama from "../images/cama (1).png"
 
-
-
 function Habitaciones() {
     return (
         <div>

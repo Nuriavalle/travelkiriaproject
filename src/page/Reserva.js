@@ -3,7 +3,6 @@ import Reserva from "../components1/reserva";
 import Header2 from "../components/header2";
 import Cuadros from "../components/cuadros";
 
-
 function ReservaHabi() {
     return (
         <div>

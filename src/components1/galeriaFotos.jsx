@@ -1,19 +1,13 @@
-
-function GaleriaFotos (){
-    return(
-        
+function GaleriaFotos() {
+    return (
         <section>
-
             <div class="flex items-center justify-center">
-            
                 <div class="mx-auto w-full max-w-[550px] bg-white">
                     <form class="py-4 px-9">
-
                         <div class="mb-6 pt-4">
                             <label class="mb-5 block text-xl font-semibold text-[#07074D]">
                                 Subir imágenes del hotel
                             </label>
-
                             <div class="mb-8">
                                 <input type="file" name="file" id="file" class="sr-only" />
                                 <label for="file"
@@ -44,7 +38,6 @@ function GaleriaFotos (){
                                     <option>Habitación Queen</option>
                                 </select>
                             </div>
-
                             <div class="mb-8">
                                 <input type="file" name="file" id="file" class="sr-only" />
                                 <label for="file"
@@ -63,10 +56,7 @@ function GaleriaFotos (){
                                     </div>
                                 </label>
                             </div>
-
-                            
                         </div>
-
                         <div>
                             <button
                                 class="hover:shadow-form w-full rounded-md bg-[#0D3B66] py-3 px-8 text-center text-base font-semibold text-white outline-none">
@@ -76,12 +66,7 @@ function GaleriaFotos (){
                     </form>
                 </div>
             </div>
-
         </section>
-        
-
-
     )
 }
-
 export default GaleriaFotos;

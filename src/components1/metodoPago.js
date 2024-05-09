@@ -1,10 +1,9 @@
 import Transferencia from "../assets/imagenes/Pago/transferencia.png"
 import Bitcoin from "../assets/imagenes/Pago/bitcoin.png"
 
-function PagoMetodos (){
-    return(
-
-        <div class="font-[sans-serif] bg-white p-4">
+function PagoMetodos() {
+  return (
+    <div class="font-[sans-serif] bg-white p-4">
       <div class="lg:max-w-7xl max-w-xl mx-auto">
         <div class="grid lg:grid-cols-3 gap-10">
           <div class="lg:col-span-2 max-lg:order-1">
@@ -54,13 +53,13 @@ function PagoMetodos (){
                   </label>
                 </div>
                 <div class="flex items-center">
-                  <input type="radio" class="w-5 h-5 cursor-pointer" id="card"/>
+                  <input type="radio" class="w-5 h-5 cursor-pointer" id="card" />
                   <label for="card" class="ml-4 flex gap-2 cursor-pointer">
                     <img src={Transferencia} class="w-12" alt="card1" />
                   </label>
                 </div>
                 <div class="flex items-center">
-                  <input type="radio" class="w-5 h-5 cursor-pointer" id="card"/>
+                  <input type="radio" class="w-5 h-5 cursor-pointer" id="card" />
                   <label for="card" class="ml-4 flex gap-2 cursor-pointer">
                     <img src={Bitcoin} class="w-12" alt="card1" />
                   </label>
@@ -95,7 +94,6 @@ function PagoMetodos (){
                     Acepto los <a href="javascript:void(0);" class="text-blue-600 font-semibold hover:underline ml-1">Terminos y condiciones.</a>
                   </label>
                 </div>
-
               </div>
               <div class="flex flex-wrap gap-4 mt-8">
                 <button type="button" class="min-w-[150px] px-6 py-3.5 text-sm bg-gray-100 text-[#333] rounded-md hover:bg-gray-200">Regresar</button>
@@ -116,8 +114,6 @@ function PagoMetodos (){
         </div>
       </div>
     </div>
-
-    )
+  )
 }
-
 export default PagoMetodos

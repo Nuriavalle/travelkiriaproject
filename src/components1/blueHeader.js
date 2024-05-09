@@ -6,7 +6,6 @@ function BlueHeader() {
             <div class="container mx-auto flex items-center justify-between h-full">
                 <a href="#Inicio" class="flex items-center">
                     <img src={LogoNegativo} alt="Logo de la empresa" class="object-contain h-[135px] mr-6"></img>
-
                 </a>
                 <p class="mr-[400px]">"Tu hogar lejos de casa, reserva en un clic”.</p>
             </div>

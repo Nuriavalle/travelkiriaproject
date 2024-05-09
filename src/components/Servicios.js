@@ -9,7 +9,6 @@ import Wifi from "../images/wifi.png"
 
 function Servicios() {
     return (
-
         <section class="text-gray-600 body-font">
             <div class="container px-16 py-8 mx-auto flex flex-wrap">
                 <div class="flex flex-wrap -m-4">
@@ -21,12 +20,12 @@ function Servicios() {
                         <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
                             <a>
                                 <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                    <img src={Bar}/>
+                                    <img src={Bar} />
                                 </span>Bar
                             </a>
                             <a>
                                 <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                    <img src={AireAcon}/>
+                                    <img src={AireAcon} />
                                 </span>Aire Acondicionado
                             </a>
                         </nav>
@@ -35,12 +34,12 @@ function Servicios() {
                         <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
                             <a>
                                 <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                    <img src={Piscina}/>
+                                    <img src={Piscina} />
                                 </span>Piscina
                             </a>
                             <a>
                                 <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                    <img src={Spa}/>
+                                    <img src={Spa} />
                                 </span>Spa
                             </a>
                         </nav>
@@ -49,12 +48,12 @@ function Servicios() {
                         <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
                             <a>
                                 <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                    <img src={Parqueo}/>
+                                    <img src={Parqueo} />
                                 </span>Parqueo
                             </a>
                             <a>
                                 <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <img src={Cafeteria}/>
+                                    <img src={Cafeteria} />
                                 </span>Cafeteria
                             </a>
                         </nav>
@@ -63,12 +62,12 @@ function Servicios() {
                         <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
                             <a>
                                 <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                    <img src={Gimnasio}/>
+                                    <img src={Gimnasio} />
                                 </span>Gimnasio
                             </a>
                             <a>
                                 <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <img src={Wifi}/>
+                                    <img src={Wifi} />
                                 </span>Wifi
                             </a>
                         </nav>
@@ -76,14 +75,10 @@ function Servicios() {
                 </div>
             </div>
             <div class="w-1/3">
-          
-        </div>
-        <div class="w-1/2">
-          
-        </div>
+            </div>
+            <div class="w-1/2">
+            </div>
         </section>
-
-
     );
 };
 export default Servicios;

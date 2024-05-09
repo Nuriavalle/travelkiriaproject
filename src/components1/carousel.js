@@ -3,7 +3,6 @@ import Imagen1 from '../assets/imagenes/carousel/imagen1.jpg'
 import Imagen2 from '../assets/imagenes/carousel/imagen2.jpg'
 import Imagen3 from '../assets/imagenes/carousel/imagen3.jpg'
 import Imagen4 from '../assets/imagenes/carousel/imagen4.jpg'
-
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 

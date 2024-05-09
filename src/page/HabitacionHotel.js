@@ -10,7 +10,6 @@ function HabitacionHotel() {
             <Cuadros></Cuadros>
             <Habitaciones></Habitaciones>
         </div>
-
     );
 };
 export default HabitacionHotel;

@@ -6,7 +6,6 @@ import imagen3 from "../images/living.jpg"
 import imagen4 from "../images/piscina.jpg"
 import imagen5 from "../images/comedor.jpg"
 
-
 function Carrusel() {
   return (
     <section class="text-gray-600 body-font">
@@ -50,5 +49,4 @@ function Carrusel() {
     </section>
   );
 };
-
 export default Carrusel

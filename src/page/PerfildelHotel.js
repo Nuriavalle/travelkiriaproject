@@ -7,7 +7,6 @@ function PerfildelHotel1() {
         <div>
             <Header2></Header2>
             <PerfilHotel></PerfilHotel>
-
         </div>
     )
 }

@@ -6,16 +6,12 @@ import Fotos from "../assets/imagenes/perfilHotel/galeria.png"
 import Direccion from "../assets/imagenes/perfilHotel/ubicacion.png"
 import Info from "../assets/imagenes/perfilHotel/info.png"
 
-
 function Tabs() {
   const [mostrarContenido, setMostrarContenido] = useState(1);
-
   console.log("mostrarContenido ==>", mostrarContenido);
-
   const cambiarContenido = (idContenido) => {
     setMostrarContenido(idContenido);
   };
-
   return (
     <section class="text-gray-600 body-font">
       <div class="container px-5 mx-auto flex flex-wrap flex-col">
@@ -23,12 +19,10 @@ function Tabs() {
           <a
             onClick={() => cambiarContenido(1)}
             // className={${()? 'TRUE agregar' : 'FALSE'} default}
-
-            className={` ${
-              mostrarContenido == 1
+            className={` ${mostrarContenido == 1
                 ? "bg-gray-100 border-[#0D3B66] text-[#0D3B66]"
                 : ""
-            } sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium  inline-flex items-center leading-none tracking-wider rounded-t`}
+              } sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium  inline-flex items-center leading-none tracking-wider rounded-t`}
           >
             <svg
               fill="none"
@@ -43,14 +37,12 @@ function Tabs() {
             <img src={Info} class="w-auto h-10 pr-4"></img>
             Información general
           </a>
-
           <a
             onClick={() => cambiarContenido(2)}
-            className={` ${
-              mostrarContenido == 2
+            className={` ${mostrarContenido == 2
                 ? "bg-gray-100 border-[#0D3B66] text-[#0D3B66]"
                 : ""
-            } sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium  inline-flex items-center leading-none tracking-wider rounded-t`}
+              } sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium  inline-flex items-center leading-none tracking-wider rounded-t`}
           >
             <svg
               fill="none"
@@ -65,14 +57,12 @@ function Tabs() {
             <img src={Fotos} class="w-auto h-10 pr-4"></img>
             Galeria de fotos
           </a>
-
           <a
             onClick={() => cambiarContenido(3)}
-            className={` ${
-              mostrarContenido == 3
+            className={` ${mostrarContenido == 3
                 ? "bg-gray-100 border-[#0D3B66] text-[#0D3B66]"
                 : ""
-            } sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium  inline-flex items-center leading-none tracking-wider rounded-t`}
+              } sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium  inline-flex items-center leading-none tracking-wider rounded-t`}
           >
             <svg
               fill="none"
@@ -88,7 +78,6 @@ function Tabs() {
             Ubicación
           </a>
         </div>
-
         {mostrarContenido == 1 && <InfoGeneral />}
         {mostrarContenido == 2 && <GaleriaFotos />}
         {mostrarContenido == 3 && <Ubicacion />}
@@ -96,5 +85,4 @@ function Tabs() {
     </section>
   );
 }
-
 export default Tabs;

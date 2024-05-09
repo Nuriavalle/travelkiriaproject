@@ -11,29 +11,25 @@ function Tabs() {
   };
   return (
     <div className="w-full py-4 flex flex-wrap flex-col">
-
-    <div className="flex justify-around">
-
-      <a onClick={() => cambiarContenido(1)}
-        className={`${(mostrarContenido == 1) ? 'bg-gray-100 border-black text-black' : 'bg-[#5E8C61] border-white text-white'} sm:px-6 py-3 w-full flex justify-center  border-b-2 title-font font-medium  inline-flex  leading-none  tracking-wider rounded-t   `}>
-        DESCRIPCION
-      </a>
-      <a onClick={() => cambiarContenido(2)}
-        className={`${(mostrarContenido == 2) ? 'bg-gray-100 border-black text-black' : 'bg-[#5E8C61] border-white text-white'} sm:px-6 py-3 w-full flex justify-center  border-b-2 title-font font-medium  inline-flex  leading-none  tracking-wider rounded-t   `}>
-        SERVICIOS
-      </a>
-      <a onClick={() => cambiarContenido(3)}
-        className={`${(mostrarContenido == 3) ? 'bg-gray-100 border-black text-black' : 'bg-[#5E8C61] border-white text-white'} sm:px-6 py-3 w-full flex justify-center  border-b-2 title-font font-medium  inline-flex  leading-none  tracking-wider rounded-t   `}>
-        RESEÑAS
-      </a
-      >
+      <div className="flex justify-around">
+        <a onClick={() => cambiarContenido(1)}
+          className={`${(mostrarContenido == 1) ? 'bg-gray-100 border-black text-black' : 'bg-[#5E8C61] border-white text-white'} sm:px-6 py-3 w-full flex justify-center  border-b-2 title-font font-medium  inline-flex  leading-none  tracking-wider rounded-t   `}>
+          DESCRIPCION
+        </a>
+        <a onClick={() => cambiarContenido(2)}
+          className={`${(mostrarContenido == 2) ? 'bg-gray-100 border-black text-black' : 'bg-[#5E8C61] border-white text-white'} sm:px-6 py-3 w-full flex justify-center  border-b-2 title-font font-medium  inline-flex  leading-none  tracking-wider rounded-t   `}>
+          SERVICIOS
+        </a>
+        <a onClick={() => cambiarContenido(3)}
+          className={`${(mostrarContenido == 3) ? 'bg-gray-100 border-black text-black' : 'bg-[#5E8C61] border-white text-white'} sm:px-6 py-3 w-full flex justify-center  border-b-2 title-font font-medium  inline-flex  leading-none  tracking-wider rounded-t   `}>
+          RESEÑAS
+        </a
+        >
+      </div>
+      {(mostrarContenido == 1) && <Descripcion />}
+      {(mostrarContenido == 2) && <Servicios />}
+      {(mostrarContenido == 3) && <Reseñas />}
     </div>
-
-    {(mostrarContenido == 1) && <Descripcion />}
-    {(mostrarContenido == 2) && <Servicios />}
-    {(mostrarContenido == 3) && <Reseñas />}
-
-  </div>
   );
 };
 export default Tabs

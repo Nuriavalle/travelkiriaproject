@@ -5,8 +5,6 @@ import InfoHotel from '../components/infohotel';
 import Tabs from './Tabs';
 import Opciones from './opciones';
 import Mapa from "../components/mapa"
-
-
 import fachada from '../images/fachada.png';
 import living from '../images/living.jpg';
 import habitacionImage from '../images/habiatacionking.jpg';
@@ -18,7 +16,6 @@ function Carrusel() {
   const [thumbnails, setThumbnails] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  
   const images = [
     { id: 1, src: fachada },
     { id: 2, src: comedorImage },
@@ -26,66 +23,17 @@ function Carrusel() {
     { id: 4, src: habitacionImage },
     { id: 5, src: living },
   ];
-
   const numImages = images.length;
-  const thumbnailWidth = 100 / numImages; 
-
-
-  useEffect(() => {
-    // const fetchImages = async () => {
-    //   try {
-    //     const response = await fetch(
-    //       'https://api.unsplash.com/photos/random?count=10&client_id=Nppj_gPu-CNwOuCBbQWUd3rfNwLzKanXVABzF9wxuMg'
-    //     );
-    //     if (response.ok) {
-    //       const data = await response.json();
-    //       setImages(data);
-    //       const thumbnailUrls = data.map((image) => image.urls.thumb);
-    //       setThumbnails(thumbnailUrls);
-    //     } else {
-    //       console.error('Error fetching images:', response.statusText);
-    //     }
-    //   } catch (error) {
-    //     console.error('Error fetching images:', error);
-    //   }
-    // };
-
-    // fetchImages();
-  }, []);
+  const thumbnailWidth = 100 / numImages;
 
   return (
     <section className="text-gray-600 body-font">
-      
       <div className="container ml-12 w-32 h-12 text-lg py-1 border-4 text-center font-medium text-black focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
         FOTOS
       </div>
-
       <div className="container px-5 mx-auto ml-8 flex flex-wrap items-center ">
-
         <div className="lg:w-8/12 h-4/5 md:pr-16 lg:pr-0 pr-0 ">
-         
-          {/* <Carousel selectedItem={currentIndex}>
-            {images.map((image, index) => (
-              <div key={index} style={{ width: '100%', height: '400px' }}>
-                <div className="h-128">
-                  <img src={image.urls.regular} alt={`Image ${index}`} className="h-full" />
-                </div>
-              </div>
-            ))}
-          </Carousel>
-          <div className="flex justify-center mt-4">
-            {thumbnails.map((thumbnail, index) => (
-              <img
-                key={index}
-                src={thumbnail}
-                alt={`Thumbnail ${index}`}
-                className="w-16 h-16 object-cover cursor-pointer mr-2"
-                onClick={() => setCurrentIndex(index)}
-              />
-            ))}
-          </div> */}
-
-<Carousel selectedItem={currentIndex}>
+          <Carousel selectedItem={currentIndex}>
             {images.map((image, index) => (
               <div key={index} style={{ width: '100%', height: '500px' }}>
                 <div className="h-128">
@@ -94,50 +42,30 @@ function Carrusel() {
               </div>
             ))}
           </Carousel>
-          <div className="flex justify-center mt-4 h-32"> 
+          <div className="flex justify-center mt-4 h-32">
             {images.map((image, index) => (
               <img
                 key={index}
                 src={image.src}
                 alt={`Thumbnail ${index}`}
                 className="object-cover cursor-pointer mr-2"
-                style={{ width: `${thumbnailWidth}%`, height: '100%' }} 
+                style={{ width: `${thumbnailWidth}%`, height: '100%' }}
                 onClick={() => setCurrentIndex(index)}
               />
             ))}
           </div>
-
-
           <div className='w-full'>
             <Tabs></Tabs>
-
             <div className='py-4'>
               <Mapa></Mapa>
             </div>
-            
           </div>
-
         </div>
-
         <div className="lg:w-4/12 h-4/5 md:pr-16 lg:pr-0 pr-0">
-        <InfoHotel></InfoHotel>
-        
+          <InfoHotel></InfoHotel>
         </div>
-
-  
-
-
-
-       
-
-
-
-
       </div>
-
-      
     </section>
   );
 }
-
 export default Carrusel;
